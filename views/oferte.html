@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustinere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<link rel="stylesheet" href="css/oferte.css">
+<link href="https://fonts.cdnfonts.com/css/im-fell-great-primer-sc" rel="stylesheet">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li>
+                <a class="links nav-item nav-link active" href="../index.html">Acasa</a>
+            </li>
+            <li>
+                <a class="links nav-item nav-link" href="despre_noi.html">Despre noi</a>
+            </li>
+            <li>
+                <a class="links nav-item nav-link" href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a class="links nav-item nav-link" href="oferte.html">Sustinere</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="row h-100 no-gutters">
+            <div id="welcome" class="col d-flex align-items-center justify-content-center">
+                <h1 id="title" class="w-100 text-center">Cand oferi, primesti.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="info" class="container-fluid">
+        <div class="row h-100">
+            <div class="col d-flex align-items-center justify-content-center">
+                <h5 class="greenText subTitlu">-- Cumparand de la noi sustii lucrarea --</h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="magazin" class="container">
+        <div id="meniu" class="row text-center">
+            <div class="col">
+                <p id="Legume" onclick="SelectCategory(this)" class="shopOption enabled">Legume</p>
+            </div>
+            <div class="col">
+                <p id="Carne" onclick="SelectCategory(this)" class="shopOption disabled">Carne</p>
+            </div>
+            <div class="col">
+                <p id="Borcane" onclick="SelectCategory(this)" class="shopOption disabled">Borcane</p>
+            </div>
+            <div class="col">
+                <p id="Lactate" onclick="SelectCategory(this)" class="shopOption disabled">Lactate</p>
+            </div>
+            <div class="col">
+                <p id="Mobila" onclick="SelectCategory(this)" class="shopOption disabled">Mobila</p>
+            </div>
+        </div>
+
+        <div id="orderWindow" class="row-fluid p-4 orderWindow closed position-absolute">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col">
+                        <h3>Comanda acum!</h3>
+                        <hr>
+                    </div>
+                    <div class="col-1">
+                        <svg id="closeOrderBtn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="produs">Alege produsul</label>
+                    </div>
+                    <div class="col">
+                        <select style="width: 100%;" class="" name="produs" id="prosusMenu">
+                            <option value="rosii">Rosii</option>
+                            <option value="castraveti">Castraveti</option>
+                            <option value="ardeiGrasi">Ardei grasi</option>
+                            <option value="ardeiCapia">Ardei Capia</option>
+                            <option value="salata">Salata</option>
+                            <option value="cosLegume">Cos cu legume</option>
+
+                            <option value="carnePorc">Carne de Porc</option>
+                            <option value="CarnePui">Carne de Pui</option>
+                            <option value="carneCurcan">Carne de Curcan</option>
+                            <option value="carneRata">Carne de Rata</option>
+                            <option value="ladaCarne">Lada de Carne</option>
+
+                            <option value="zacusca">Zacusca</option>
+                            <option value="dulceata">Dulceata</option>
+                            <option value="bulion">Bulion</option>
+                            <option value="legumeOtet">Legume la otet</option>
+                            <option value="cosBorcane">Lada de Borcane</option>
+
+                            <option value="lapte">Lapte</option>
+                            <option value="branzaDulce">Branza dulce</option>
+                            <option value="smantana">Smantana</option>
+                            <option value="branzaCas">Branza "Cas"</option>
+                            <option value="platouBranza">Platoul de Branzeturi</option>
+
+                            <option value="dulap">Dulap</option>
+                            <option value="masa">Masa</option>
+                            <option value="scaun">Scaune</option>
+                            <option value="pat">Paturi</option>
+                            <option value="setMobila">Set Mobila</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="cantitate">Cantitate(kg)</label>
+                    </div>
+                    <div class="col">
+                        <input type="number" min = "1">
+                    </div>
+                    
+                </div>
+                
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="ridicare">Data de ridicare</label>
+                    </div>
+                    <div class="col">
+                        <input style="width: 100%;" type="date">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="telefon">Telefon</label>
+                    </div>
+                    <div class="col">
+                        <input style="width: 100%;" type="phone">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="name">Nume</label>
+                    </div>
+                    <div class="col">
+                        <input style="width: 100%;" type="text">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class = "disabled">Pentru informatii specifice suna-ne: +40 743 610 845</p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col text-center">
+                        <hr>
+                        <button class="btn btn-primary" type="button">Comanda</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "containerStore">
+            <div id="produseLegume" class="row mb-5 justify-content-between category">
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/tomatoes.jpeg" alt="Paprika">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Rosii</h5>
+                             <p>Crescute in serele noastre si fara chimicale</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/cucumber.jpeg" alt="Paprika">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Castraveti</h5>
+                             <p>Crescuti in serele noastre si fara chimicale</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/paprika.jpeg" alt="Paprika">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Ardei grasi si Capia</h5>
+                             <p>Crescuti in serele noastre si fara chimicale</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/salat.jpg" alt="Paprika">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Salata</h5>
+                             <p>Crescuta in serele noastre si fara chimicale</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col-3 p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/cos_legume.jpg" alt="Vegatables Basket">
+                         </div>
+                         <div class="col grad4 text-center">
+                             <h5 class="greenText">Cosul cu legume</h5>
+                             <p>Un cos de legume din care poti sa faci mai multe salate sanatoase pentru tine si famila ta.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                         <div class="col-3 p-0 grad3">
+                             <img class="imgShop imgGradient2" src="../images/shop/cos_legume2.jpg" alt="Vegatables Basket">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="produseCarne" class="row mb-5 justify-content-between category" hidden>
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                      <div class="row">
+                          <div class="col p-0 grad1">
+                              <img class="imgShop imgGradient" src="../images/shop/Carne/porci.jpeg" alt="Carne de porc">
+                          </div>
+                          <div class="col text-center grad2">
+                              <h5 class="greenText">Carne de porc</h5>
+                              <p>Carne de porc asa cum trebuie sa fie(bio).</p>
+                              <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                          </div>
+                      </div>
+                 </div>
+      
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                      <div class="row">
+                          <div class="col p-0 grad1">
+                              <img class="imgShop imgGradient" src="../images/shop/Carne/gaini1.jpeg" alt="Pui">
+                          </div>
+                          <div class="col text-center grad2">
+                              <h5 class="greenText">Carne de pui</h5>
+                              <p>Carne de pui asa cum trebuie sa fie(bio).</p>
+                              <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                      <div class="row">
+                          <div class="col p-0 grad1">
+                              <img class="imgShop imgGradient" src="../images/shop/Carne/curcan.jpeg" alt="Curcan">
+                          </div>
+                          <div class="col text-center grad2">
+                              <h5 class="greenText">Carne de curcan</h5>
+                              <p>Carne de curcan asa cum trebuie sa fie(bio).</p>
+                              <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                          </div>
+                      </div>
+                 </div>
+      
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                      <div class="row">
+                          <div class="col p-0 grad1">
+                              <img class="imgShop imgGradient" src="../images/shop/Carne/rata.jpg" alt="Rata">
+                          </div>
+                          <div class="col text-center grad2">
+                              <h5 class="greenText">Carne de rata</h5>
+                              <p>Carne de rata asa cum trebuie sa fie(bio).</p>
+                              <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="col-11 mx-auto mt-5 produs">
+                      <div class="row">
+                          <div class="col-3 p-0 grad1">
+                              <img class="imgShop imgGradient" src="../images/shop/Carne/carne1.jpg" alt="Lada de carne">
+                          </div>
+                          <div class="col grad4 text-center">
+                              <h5 class="greenText">Lada de carne</h5>
+                              <p>Ciorba, friptura, supe, toate dintr-o lada in care le ai toate.</p>
+                              <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                          </div>
+                          <div class="col-3 p-0 grad3">
+                              <img class="imgShop imgGradient2" src="../images/shop/Carne/carne2.jpg" alt="Lada de corne">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div id="produseBorcane" class="row mb-5 justify-content-between category" hidden>
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Borcane/zacusca.jpg" alt="Zacusca">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Zacusca</h5>
+                             <p>Zacusca cu gustul de acasa. Aici 'gusturile' se discuta.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Borcane/dulceata.jpg" alt="Dulceata">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Dulceata</h5>
+                             <p>Dulceata cu gustul de acasa. Aici 'gusturile' se discuta.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Borcane/bulion.jpeg" alt="Bulion">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Bulion</h5>
+                             <p>Bulion cu gustul de acasa. Aici 'gusturile' se discuta.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Borcane/legumeLaOtet.jpeg" alt="Legume la otet">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Legume la otet</h5>
+                             <p>Legume la otet cu gustul de acasa. Aici 'gusturile' se discuta.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col-3 p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Borcane/borcane1.jpg" alt="Lada de borcane">
+                         </div>
+                         <div class="col grad4 text-center">
+                             <h5 class="greenText">Lada de borcane</h5>
+                             <p>Nu te poti hotara daca vrei zacusca sau gem in dimineata asta? Nici nu trebuie.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                         <div class="col-3 p-0 grad3">
+                             <img class="imgShop imgGradient2" src="../images/shop/Borcane/borcane2.jpg" alt="Lada de borcane">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="produseLactate" class="row mb-5 justify-content-between category" hidden>
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Lactate/lapte.jpg" alt="Lapte">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Lapte</h5>
+                             <p>Lapte complet natural de la vacile crescute cu grija in libertate.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Lactate/banza.jpg" alt="Branza dulce">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Branza dulce</h5>
+                             <p>Branza complet naturala de la vacile crescute cu grija in libertate.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Lactate/smantana.jpg" alt="Smantana">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Smantana</h5>
+                             <p>Smantana complet naturala de la vacile crescute cu grija in libertate.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Lactate/branzaCas.jpg" alt="Branza cas">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Branza "Cas"</h5>
+                             <p>Branza Cas complet naturala de la vacile crescute cu grija in libertate.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col-3 p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Lactate/lapte1.jpeg" alt="Platou branzeturi">
+                         </div>
+                         <div class="col grad4 text-center">
+                             <h5 class="greenText">Platoul cu branzeturi</h5>
+                             <p>Impresioneaza-ti prietenii si familia la o masa cu branzeturi variate si lapte proaspat.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                         <div class="col-3 p-0 grad3">
+                             <img class="imgShop imgGradient2" src="../images/shop/Lactate/lapte2.jpg" alt="Platou branzeturi">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="produseMobila" class="row mb-5 justify-content-between category" hidden>
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Mobila/dulap.jpg" alt="Dulapuri">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Dulapuri</h5>
+                             <p>Dulapuri reconditionate de noi, ca acasa sa fie acasa.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Mobila/masa.jpg" alt="Mese">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Mese</h5>
+                             <p>Mese reconditionate de noi, ca acasa sa fie acasa.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Mobila/scaun.jpg" alt="Scaune">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Scaune</h5>
+                             <p>Scaune reconditionate de noi, ca acasa sa fie acasa.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                </div>
+     
+                <div class="col-11 col-lg-5 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Mobila/pat.jpg" alt="Paturi">
+                         </div>
+                         <div class="col text-center grad2">
+                             <h5 class="greenText">Paturi</h5>
+                             <p>Paturi reconditionate de noi, ca acasa sa fie acasa.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                     </div>
+                 </div>
+     
+                 <div class="col-11 mx-auto mt-5 produs">
+                     <div class="row">
+                         <div class="col-3 p-0 grad1">
+                             <img class="imgShop imgGradient" src="../images/shop/Mobila/set_1.jpeg" alt="Set Mobila">
+                         </div>
+                         <div class="col grad4 text-center">
+                             <h5 class="greenText">Set mobila</h5>
+                             <p>Lasa-ti casa sa fie primitoare si moderna cu mobila reconditionata.</p>
+                             <button onclick="OpenOrderWindow()" class="card_btn">Comanda acum</button>
+                         </div>
+                         <div class="col-3 p-0 grad3">
+                             <img class="imgShop imgGradient2" src="../images/shop/Mobila/set_2.jpeg" alt="Set Mobila">
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="footer container-fluid mt-5">
+        <div class="row h-100">
+            <div class="col-12 col-lg-6 my-auto">
+                <form action="_POST">
+                    <div class="row">
+                        <div class="col m-2">
+                            <input class="inputFooter" type="text" placeholder="Nume">
+                        </div>
+                        <div class="col m-2">
+                            <input class="inputFooter" type="text" placeholder="Prenume">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2">
+                            <input class="inputFooter" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2">
+                            <textarea class="inputFooter" style="resize: none;" name="Message" cols="30" rows="10" placeholder="Mesajul tau..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <button id="send_btn">Trimite</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row h-100 text-center">
+                    <div class="col-12 col-xl-6 my-auto text-white">
+                        <h3>Ne gasesti aici:</h3>
+                        <h6>Satul Uncesti</h6>
+                        <h6>Strada Principala</h6>
+                        <h6>Numarul 9</h6>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <img class="icon" src="../images/whatappIcon.png" alt="Whatapp Icon">
+                            </div>
+                            <div class="col">
+                                <img class="icon" src="../images/facebookIcon.png" alt="Facebook Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 my-auto">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5462.587751461889!2d27.595499728260464!3d46.79851676116455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ca64449af3588f%3A0xb5264130288e8156!2sUnce%C8%99ti%20737634%2C%20Romania!5e0!3m2!1sen!2sde!4v1673238074818!5m2!1sen!2sde" width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <p>© 2023 by Gen Graphic. All rights rezerved to Pasi spre lumina</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/oferte.js"></script>
+</html>

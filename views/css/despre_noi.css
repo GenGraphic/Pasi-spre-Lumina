@@ -1,0 +1,218 @@
+@import url('https://fonts.cdnfonts.com/css/im-fell-great-primer-sc');
+
+/*General style*/
+* {
+    font-family: 'IM FELL Great Primer SC', sans-serif;
+}
+.greenText{
+    color: rgb(58, 90, 64);   
+}
+.paragraph {
+    font-size: 1.4rem;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+}
+.logo {
+    height: 150px;
+    width: auto;
+}
+
+/*Navbar start*/
+.links {
+    font-size: 1.8rem !important;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000000;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+/*Navbar end*/
+
+/*Welcome start*/
+#welcome {
+    height: 600px;
+    background-color: rgb(220, 209, 193);
+    background-image: url("../../images/aboutUs/WelcomeBkg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.foto {
+    width: 100%;
+    height: 250px;
+    max-width: 380px;
+    box-shadow: 0 0 10px black;
+    border: 10px solid white;
+    transition: 0.1s;
+    object-fit: cover;
+}
+.foto:hover {
+    box-shadow: 0 0 10px 5px black;
+    z-index: 10000 !important;
+}
+/*Welcome end*/
+
+/*SecondPart start*/
+.imgBkg {
+    background-image: url("../../images/aboutUs/tractorOnField.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+}
+.rotateLogo {
+    animation: rotation 10s linear infinite;
+}
+.rotateLogo:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*SecondPart end*/
+
+/*Istorie start*/
+#istoria {
+    height: 100%;
+}
+#map {
+    background-color: rgb(58, 90, 64);
+}
+#line {
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background-color: rgb(166, 138, 100);
+    margin-left: 8px;
+}
+#lineCont {
+    height: 100%;
+    width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: relative;
+}
+#stepsCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#stepsCont p {
+    margin: 0;
+    color: rgb(166, 138, 100);
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(112, 224, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulsing 1s ease infinite;
+}
+@keyframes pulsing {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.dot {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(199, 150, 83);
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+    z-index: 2;
+}
+.canvas {
+    background-color: rgb(58, 90, 64);
+}
+.enabled {
+    display: block;
+}
+.disabled {
+    display: none !important;
+}
+.imgCarusel {
+    box-shadow: 0 0 3px black;
+    object-fit: cover;
+}
+.rowFotos{
+    z-index: 1;
+}
+#textCont img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   filter: blur(3px);
+   -webkit-filter: (3px); 
+}
+#stepTitle {
+    background-color: rgba(217, 217, 217, 0.3);
+    padding: 20px;
+}
+/*Istorie end*/
+
+/*Footer Start*/
+.footer {
+    background-color: rgb(58, 90, 64);
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+#send_btn {
+    background: none;
+    border: 1px solid rgb(166, 138, 100);
+    width: 150px;
+    border-radius: 50px;
+    color: white;
+    transition: 0.5s;
+}
+#send_btn:hover {
+    background-color: rgb(166, 138, 100);
+}
+/*Footer End*/

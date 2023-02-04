@@ -1,0 +1,221 @@
+@import url('https://fonts.cdnfonts.com/css/im-fell-great-primer-sc');
+
+/*General style*/
+* {
+    font-family: 'IM FELL Great Primer SC', sans-serif;
+}
+.greenText{
+    color: rgb(58, 90, 64);   
+}
+.paragraph {
+    font-size: 1.4rem;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+/*Navbar start*/
+.links {
+    font-size: 1.8rem !important;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000000;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+/*Navbar end*/
+
+/*Welcome Start*/
+#welcomePart {
+    height: 700px;
+    background-image: url('images/welcomePartBkg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#title{
+    transition: 1s;
+}
+
+#callToAction {
+    height: auto;
+    background: none;
+    font-size: 2.2rem;
+    border-radius: 50px;
+    border: 3px solid rgb(58, 90, 64);
+    transition: 1s;
+}
+.toSlide {
+    transform: translateX(-500px);
+    opacity: 0;
+}
+.toSlide.slideActive{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#callToAction:hover {
+    background-color: rgb(58, 90, 64);
+    color: white;
+}
+
+.logo {
+    position: relative;
+    top: 100px;
+    transition: 1s;
+}
+#toSlideLogo {
+    transform: translateX(300px);
+    opacity: 0;
+}
+.toSlideLogo.slideLogoActive {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+/*Welcome End*/
+
+#line {
+    background-color: rgb(166, 138, 100);
+    height: 2px;
+}
+
+/*Mission start*/
+#ourMission {
+    background-color: rgb(220, 209, 193);
+}
+#img_utilaje {
+    background-image: url("images/utilajeAgricole.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_moara {
+    background-image: url("images/mill.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_curent {
+    background-image: url("images/solar_panel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_spiritual {
+    background-image: url("images/summer_camp.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+#img_serele {
+    background-image: url("images/serele.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_borcane {
+    background-image: url("images/legumeLaOtet.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_animale {
+    background-image: url("images//gaini1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card_img {
+    width: auto;
+    height: 350px;
+}
+.card_btn {
+    background-color: rgb(58, 90, 64);
+    color: white;
+} 
+.reveal {
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*Mission end*/
+
+/*Carusel Start*/
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active, 
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+  
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0); 
+}
+/*Carusel End*/
+
+/*Footer Start*/
+.footer {
+    background-color: rgb(58, 90, 64);
+}
+
+input, textarea {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+#send_btn {
+    background: none;
+    border: 1px solid rgb(166, 138, 100);
+    width: 150px;
+    border-radius: 50px;
+    color: white;
+    transition: 0.5s;
+}
+#send_btn:hover {
+    background-color: rgb(166, 138, 100);
+}
+/*Footer End*/

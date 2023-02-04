@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre noi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<link rel="stylesheet" href="css/despre_noi.css">
+<link href="https://fonts.cdnfonts.com/css/im-fell-great-primer-sc" rel="stylesheet">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li>
+                <a class="links nav-item nav-link active" href="../index.html">Acasa</a>
+            </li>
+            <li>
+                <a class="links nav-item nav-link" href="despre_noi.html">Despre noi</a>
+            </li>
+            <li>
+                <a class="links nav-item nav-link" href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a class="links nav-item nav-link" href="oferte.html">Sustinere</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div id="welcome" class="container-fluid">
+        <div class="row h-100 p-3">
+            <div class="col-auto">
+                <img class="logo" src="../images/logo_black.png" alt="Logo" loading="lazy">
+            </div>
+            <div class="col-12 col-lg col-xl-7">
+                <h1 class="text-center">Toate lucrurile mari</h1>
+                <h1 class="text-right">Au fost la inceput mici</h1>
+            </div>
+            <div class="col-12 col-lg-12 my-auto">
+                <div class=" row contImg">
+                    <div class="col">
+                        <img class="foto" src="../images/aboutUs/serele.jpeg" alt="Solare" loading="lazy">
+                    </div>
+                    <div class="col">
+                        <img class="foto" src="../images/aboutUs/hala_construct.jpeg" alt="Hala" loading="lazy">
+                    </div>
+                    <div class="col">
+                        <img class="foto" src="../images/aboutUs/Casa.jpeg" alt="Casa" loading="lazy">
+                    </div>
+                    <div class="col">
+                        <img class="foto" src="../images/aboutUs/Tractor.jpeg" alt="Tractor" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="secondPart" class="container-fluid px-0">
+        <div class="row h-100 no-gutters position-relative">
+            <div class="col-12 col-lg">
+                <div class="imgBkg h-100"></div>
+            </div>
+            <div class="col-12 col-lg my-auto text-center">
+                <h1 >Pasi spre lumina</h1>
+                <p class="w-75 mx-auto">
+                    Bine ati venit la "Pasi spre lumina", o organizație non-profit dedicată ajutorării copiilor și adulților din comunitatea noastră. Misiunea noastră este de a oferi suport și resurse pentru a îmbunătăți viața acestora.
+
+                    Printre programele noastre se numără ridicarea nivelului social, spiritual, și emotional, care oferă educație, îngrijire medicală și sprijin emoțional pentru cei aflați în nevoie.
+
+                    Dumneavoastră puteți fi parte a acestui efort prin voluntariat sau prin donații. Fiecare contribuție, fie ea mare sau mică, ne ajută să îndeplinim misiunea noastră.
+
+                    Alăturați-vă echipei noastre în lupta pentru o lume mai bună pentru copii și adulții din comunitatea noastră.
+                </p>
+            </div>
+            <div class="logoCont p-5 text-lg-center">
+                <img class="logo rotateLogo" src="../images/logo_black.png" alt="Logo" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <div id="istoria" class="container-fluid px-0">
+        <div class="row h-100 no-gutters">
+            <div id="map" class="col-xl-2 col-12 text-center p-5">
+                <div class="row h-100">
+                    <div class="col-auto" id="lineCont">
+                        <div id="line"></div>
+
+                        <div id="inceputul" class="dot">
+                            <div class="circle"></div>
+                        </div>
+                        <div id="primaCladire" class="dot"></div>
+                        <div id="lucrareCopii" class="dot"></div>
+                        <div id="lucrareAdulti" class="dot"></div>
+                        <div id="ferma" class="dot"></div>
+                        <div id="solariile" class="dot"></div>
+                        <div id="moara" class="dot"></div>
+                        <div id="utilaje" class="dot"></div>
+                        <div id="bisericaNoua" class="dot"></div>
+                    </div>
+                    <div class="col" id="stepsCont">
+                        <p class="border-bottom">Inceputul</p>
+                        <p class="border-bottom">Prima cladire</p>
+                        <p class="border-bottom">Lucrarea cu copii</p>
+                        <p class="border-bottom">Lucrarea cu adultii</p>
+                        <p class="border-bottom">Ferma</p>
+                        <p class="border-bottom">Serele cu legume</p>
+                        <p class="border-bottom">Moara</p>
+                        <p class="border-bottom">Utilajele</p>
+                        <p class="border-bottom">Biserica noua</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="inceputulSlide" class="canvas col d-flex flex-column enabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_1.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_2.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_3.jpg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_4.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_5.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_6.jpg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters flex-fill">
+                    <img src="../images/aboutUs/inceputBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Inceputul necesita timp</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            În anul [data începerii], doi oameni dedicați (Deleu tatiana si Deleu Costel Eduard) au început să lucreze împreună pentru a face o schimbare pozitivă în comunitatea noastră. Aceștia au identificat nevoia acută de sprijin pentru copiii și adulții din zonă și au decis să acționeze.
+
+                            Astfel a luat naștere Pasi spre Lumina, o organizație non-profit dedicată ajutorării acestora. Încă de la început, am fost determinați să oferim suport și resurse pentru a îmbunătăți viața acestora și să le oferim oportunități pentru un viitor mai luminos.
+
+                            De-a lungul anilor, am dezvoltat programe și parteneriate puternice pentru a ne îndeplini misiunea și am crescut într-o organizație puternică și dedicată. În fiecare zi, ne angajăm să facem o diferență reală în viețile copiilor și adulților din comunitatea noastră.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="primaCladireSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_1.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_2.jpg" alt="Copii" height="50%" width="100%"loading="lazy">
+                    </div> 
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/car_trail.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/serele.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/hala_construct.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/primaCladireBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Prima caramida pentru viitor</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            În anul [data construirii primei clădiri], Pasi spre lumina a început un proiect ambițios de a construi prima sa clădire dedicată sprijinirii copiilor și adulților din comunitatea noastră. Această clădire a reprezentat un pas important în direcția noastră de a oferi resurse și suport cât mai eficient posibil.
+
+                            Clădirea noastră a oferit un spațiu dedicat pentru programele noastre, inclusiv adunare cu copii, adultii, și a permis extinderea acestora. De asemenea, a oferit un spațiu de întâlnire pentru voluntari și donatori și a devenit un centru al comunității pentru a oferi ajutor și speranță.
+
+                            Clădirea noastră a fost construită prin contribuțiile generoase ale comunității și prin munca voluntară a membrilor dedicați. Suntem recunoscători pentru toate aceste contribuții și pentru susținerea pe care am primit-o în decursul anilor.
+
+                            Clădirea noastră este mai mult decât un spațiu fizic, este simbolul dedicării și angajamentului nostru de a face o diferență reală în viețile copiilor și adulților din comunitatea noastră.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="lucrareCopiiSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_1.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_2.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/copii_3.jpg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/copii_4.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/copii_5.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/copii_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/copiiBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Copii sunt viitorul</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Ne concentrăm eforturile asupra sprijinirii copiilor din comunitatea noastră prin intermediul educației religioase. Înțelegem că valorile și credințele spirituale sunt esențiale pentru formarea unui caracter puternic și a unei personalități responsabile.
+
+                            În plus, oferim oportunități pentru copii de a învăța și de a se dezvolta prin intermediul activităților religioase, cum ar fi tabere, intalniri, și vizite acasa. Aceste activități îi ajută pe copii să-și dezvolte abilitățile, să-și îmbogățească cunoștințele religioase și să învețe valori importante, cum ar fi compasiunea, responsabilitatea și respectul.
+
+                            Suntem recunoscători pentru susținerea pe care am primit-o de la comunitatea noastră în sprijinirea copiilor din zona noastră prin intermediul educației religioase. Împreună, putem face o diferență reală în viețile acestor copii și îi putem ajuta să devină lideri spirituali și responsabili ai viitorului."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="lucrareAdultiSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/adultii_1.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/adultii_2.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/adultii_3.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/adultii_4.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/adultii_5.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/adultii_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/adultiBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Lucrarea cu adultii</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Pasi spre lumina, înțelege că adultii din comunitatea noastră au nevoie de sprijin nu numai din punct de vedere financiar, ci și din punct de vedere spiritual și social. De aceea, ne concentrăm eforturile asupra sprijinirii acestora prin intermediul unor programe care se concentrează pe educatia religioasa si sociala.
+
+                            În plus, ne dorim să oferim oportunități de muncă pentru adulții din comunitatea noastră. Programul nostru oferă posibilitatea adultilor de a lucra cu noi, îmbunătățind astfel abilitățile lor profesionale și finanțând în același timp organizația noastră.
+
+                            Suntem recunoscători pentru susținerea pe care am primit-o de la comunitatea noastră în sprijinirea adultilor din zona noastră prin intermediul programelor noastre de sprijin spiritual, religios și social, precum și a oportunităților de muncă. Împreună, putem face o diferență reală în viețile acestor adulți și îi putem ajuta să-și îmbunătățească calitatea vieții.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="fermaSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/ferma_1.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/ferma_2.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/ferma_3.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/ferma_4.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/ferma_5.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/Ferma_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/fermaBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Ferma de animale</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Suntem dedicați să oferim un sprijin durabil și sustenabil comunității noastre. De aceea, am început ferma noastră care se concentrează pe creșterea animalelor și pe energia verde.
+
+                            Ferma noastră cuprinde o varietate de animale, inclusiv porci, păsări, vaci, iepuri. Îngrijirea acestor animale este un aspect important al activităților noastre, iar produsele lor sunt utilizate în scopul susținerii financiare a organizației noastre.
+
+                            De asemenea, ferma noastră utilizează tehnologia solare pentru a genera energie verde, contribuind astfel la protejarea mediului și la reducerea emisiilor de gaze cu efect de seră.
+
+                            Suntem mândri de ferma noastră și de modul în care aceasta ajută la susținerea comunității noastre prin intermediul produselor de înaltă calitate pe care le oferim, precum și prin intermediul tehnologiei solare. Continuăm să investim în acest aspect al activităților noastre, în scopul de a oferi un viitor mai sustenabil pentru toți.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="solariileSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/serele_1.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/serele_2.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/serele_3.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/serele_4.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/serele_5.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/serele_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/sereleBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Legumele din seră</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Suntem dedicați să oferim un sprijin durabil și sustenabil comunității noastre. De aceea, am adăugat creșterea legumelor în seră la activitățile noastre.
+
+                            Sera noastră de legume oferă o varietate de culturi, inclusiv roșii, castraveți, ardei, și multe altele. Acestea sunt cultivate cu atenție, folosind tehnici moderne și ecologice, astfel încât să putem oferi legume proaspete și sănătoase comunității noastre.
+
+                            Creșterea legumelor în seră ne permite să avem acces la legume proaspete pe tot parcursul anului și să contribuim la reducerea emisiilor de gaze cu efect de seră prin evitarea transportului lung al produselor. De asemenea, acesta este un mod excelent de a îmbunătăți calitatea vieții oamenilor din comunitate prin intermediul unei alimentații sănătoase.
+
+                            Suntem mândri de sera noastră de legume și de modul în care aceasta contribuie la susținerea comunității noastre prin intermediul alimentației sănătoase pe care o oferim. Continuăm să investim în această activitate, în scopul de a oferi un viitor mai sustenabil pentru toți.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="moaraSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_1.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/inceputul_2.jpg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/car_trail.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/serele.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/hala_construct.jpeg" alt="Copii" height="50%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/moaraBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Moara de cereale</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Suntem dedicați să oferim un sprijin durabil comunității noastre. De aceea, am inclus în activitățile noastre și o moară de cereale.
+
+                            Aceasta moară de cereale este unica în această comunitate și ne permite să procesăm cerealele cultivate local, astfel încât să putem oferi produse de calitate comunității noastre.
+                            
+                            Prin intermediul acestei mori de cereale, ne propunem să susținem producătorii locali de cereale și să oferim o sursă de venit suplimentar acestora prin intermediul vânzării produselor obținute. De asemenea, aceasta ne permite să contribuim la economia locală și să oferim produse de calitate la prețuri accesibile pentru membrii comunității noastre.
+                            
+                            Suntem mândri de moara noastră de cereale și de modul în care aceasta contribuie la susținerea producătorilor locali și la îmbunătățirea economiei acestei comunități. Continuăm să investim în această activitate, în scopul de a oferi un viitor mai sustenabil pentru toți.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="utilajeSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_1.jpg" alt="Copii" height="100%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_2.jpg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_3.jpeg" alt= "Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_4.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_5.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/utilaje_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/utilajeBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Utilajele</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Acest sprijin se materializează și prin intermediul utilajelor pe care le deținem și pe care le pune la dispoziția comunității.
+
+                            Avem un parc de utilaje moderne, care ne permite să efectuăm diverse activități, de la agricultură și până la procesarea produselor alimentare. Utilajele noastre sunt de cea mai bună calitate și sunt întreținute regulat, astfel încât să ofere o performanță optimă.
+                            
+                            Principalul nostru obiectiv este să punem aceste utilaje la dispoziția comunității, astfel încât aceasta să se poată bucura de toate beneficantajele pe care le oferă. Utilajele noastre sunt disponibile pentru membrii comunității noastre, care pot să le folosească pentru a-și îmbunătăți activitățile agricole sau pentru a efectua alte activități economice.
+                            
+                            Prin intermediul acestor utilaje, suntem în măsură să oferim un sprijin real comunității noastre și să contribuim la îmbunătățirea economiei locale. Continuăm să investim în acest domeniu, în scopul de a oferi un viitor mai sustenabil pentru toți.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bisericaNouaSlide" class="canvas col d-flex flex-column disabled">
+                <div class="row rowFotos no-gutters">
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/biserica_1.jpg" alt="Copii" height="100%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/biserica_2.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/biserica_3.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/biserica_4.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                        <img class="imgCarusel" src="../images/aboutUs/biserica_5.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                    <div class="col columnn d-flex flex-column p-md-5">
+                        <img class="imgCarusel" src="../images/aboutUs/biserica_6.jpeg" alt="Copii" height="100%" width="100%" loading="lazy">
+                    </div>
+                </div>
+                <div id="textCont" class="row no-gutters h-100 align-self-stretch">
+                    <img src="../images/aboutUs/bisericaBkg.jpg" alt="Background">
+                    <div class="col-12 text-center mt-auto">
+                        <h1 id="stepTitle">Biserica noua</h1>
+                    </div>
+                    <div class="col-12 text-center">
+                        <p class="w-75 mx-auto text-white">
+                            Ne-am angajat să oferim un suport durabil comunității noastre, atât din punct de vedere spiritual, cât și material. Din acest motiv, am construit o nouă biserică, care va servi drept loc de întâlnire și rugăciune pentru membrii comunității noastre.
+
+                            Această biserică a fost construită cu sprijinul unui finanțator dedicat, care a înțeles importanța acestui proiect și a dorit să contribuie la dezvoltarea comunității noastre. Biserica este dotată cu cele mai moderne facilități și este construită astfel încât să ofere un spațiu confortabil și primitor pentru toți cei care o vizitează.
+                            
+                            Această biserică va fi locul unde membrii comunității noastre se vor putea întâlni pentru a se ruga și a se bucura de prezența lui Dumnezeu. Ea va fi un simbol al angajamentului nostru față de comunitatea noastră și va reprezenta un loc special pentru generațiile viitoare.
+                            
+                            Suntem foarte bucuroși să oferim această biserică comunității noastre și sperăm că va fi un loc unde oamenii se vor putea bucura de pacea și harul lui Dumnezeu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer container-fluid">
+        <div class="row h-100">
+            <div class="col-12 col-lg-6 my-auto">
+                <form action="_POST">
+                    <div class="row">
+                        <div class="col m-2">
+                            <input type="text" placeholder="Nume">
+                        </div>
+                        <div class="col m-2">
+                            <input type="text" placeholder="Prenume">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2">
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col m-2">
+                            <textarea style="resize: none;" name="Message" cols="30" rows="10" placeholder="Mesajul tau..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <button id="send_btn">Trimite</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row h-100 text-center">
+                    <div class="col-12 col-xl-6 my-auto text-white">
+                        <h3>Ne gasesti aici:</h3>
+                        <h6>Satul Uncesti</h6>
+                        <h6>Strada Principala</h6>
+                        <h6>Numarul 9</h6>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <img class="icon" src="../images/whatappIcon.png" alt="Whatapp Icon">
+                            </div>
+                            <div class="col">
+                                <img class="icon" src="../images/facebookIcon.png" alt="Facebook Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 my-auto">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5462.587751461889!2d27.595499728260464!3d46.79851676116455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40ca64449af3588f%3A0xb5264130288e8156!2sUnce%C8%99ti%20737634%2C%20Romania!5e0!3m2!1sen!2sde!4v1673238074818!5m2!1sen!2sde" width="auto" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <p>© 2023 by Gen Graphic. All rights rezerved to Pasi spre lumina</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/despre_noi.js"></script>
+</html>

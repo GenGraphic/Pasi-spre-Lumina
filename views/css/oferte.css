@@ -1,0 +1,158 @@
+@import url('https://fonts.cdnfonts.com/css/im-fell-great-primer-sc');
+
+/*General style*/
+* {
+    font-family: 'IM FELL Great Primer SC', sans-serif;
+}
+.greenText{
+    color: rgb(58, 90, 64);   
+}
+.paragraph {
+    font-size: 1.5rem;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+/*Navbar start*/
+.links {
+    font-size: 1.8rem !important;
+    transition: 0.5s;
+}
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+  }
+  .navbar .navbar-nav .nav-item {
+    position: relative;
+  }
+  .navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000000;
+    width: 0%;
+    content: "";
+    height: 4px;
+    transition: all 0.5s;
+  }
+  
+  .navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+  }
+/*Navbar end*/
+
+/*Welcome start*/
+#welcome {
+    background-image: url("../../images/shop/welcome_img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+#title {
+    background-color: rgba(168, 168, 168, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*Welcome end*/
+
+/*Info start*/
+#info {
+    height: 200px;
+    background-color: rgb(220, 209, 193);
+}
+.subTitlu {
+    font-size: 1.5rem;
+}
+/*Info End*/
+
+/*Magazin start*/
+.shopOption:hover {
+    font-size: 1.1rem;
+    color: #000000;
+    cursor: pointer;
+}
+.disabled {
+    color: rgb(102, 99, 99);
+}
+.enabled {
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+.imgShop {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+.imgGradient{
+    -webkit-mask-image:-webkit-gradient(linear, left top, right top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.imgGradient2{
+    -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+.produs {
+    background-color: rgb(220, 209, 193);
+    border-radius: 10px;
+}
+.card_btn {
+    background-color: rgb(58, 90, 64);
+    color: white;
+} 
+.closed {
+    display: none;
+}
+.opened {
+    display: block;
+}
+.orderWindow {
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    background-color: white;
+    width: 500px;
+    border: 3px solid rgb(58, 90, 64);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#closeOrderBtn {
+    cursor: pointer;
+}
+
+/*Magazin end*/
+
+/*Footer Start*/
+.footer {
+    background-color: rgb(58, 90, 64);
+}
+
+.inputFooter {
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+}
+::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+#send_btn {
+    background: none;
+    border: 1px solid rgb(166, 138, 100);
+    width: 150px;
+    border-radius: 50px;
+    color: white;
+    transition: 0.5s;
+}
+#send_btn:hover {
+    background-color: rgb(166, 138, 100);
+}
+/*Footer End*/
