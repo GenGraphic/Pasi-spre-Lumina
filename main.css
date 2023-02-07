@@ -1,8 +1,7 @@
-@import url('https://fonts.cdnfonts.com/css/im-fell-great-primer-sc');
 
 /*General style*/
 * {
-    font-family: 'IM FELL Great Primer SC', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .greenText{
     color: rgb(58, 90, 64);   
@@ -150,7 +149,7 @@
     background-repeat: no-repeat;
 }
 .card_img {
-    width: auto;
+    width: 350px;
     height: 350px;
 }
 .card_btn {
