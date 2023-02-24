@@ -2,12 +2,12 @@
 Welcome to the official website of [Non-Profit Organization Name], a charitable organization dedicated to making a positive impact on our community.
 
 # Table of Contents
-  -About Us
-  -Our Mission
-  -Programs
-  -Get Involved
-  -Donate
-  -Contact Us
+  - About Us
+  - Our Mission
+  - Programs
+  - Get Involved
+  - Donate
+  - Contact Us
   
 # About Us
 In this section, visitors can learn about our organization's history, values, and principles. Our goal is for visitors to understand who we are and what we stand for.
